@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/all_songs"
+        android:orderInCategory="1"
+        android:title="Songs" />
+    <item
+        android:id="@+id/all_artists"
+        android:orderInCategory="2"
+        android:title="Artists" />
+    <item
+        android:id="@+id/all_albums"
+        android:orderInCategory="3"
+        android:title="Albums" />
+    <item
+        android:id="@+id/all_playlists"
+        android:orderInCategory="4"
+        android:title="Playlists" />
+    <item
+        android:id="@+id/fav_songs"
+        android:orderInCategory="5"
+        android:title="Favorite songs" />
+    <item
+        android:id="@+id/fav_artists"
+        android:orderInCategory="6"
+        android:title="Favorite artists" />
+    <item
+        android:id="@+id/fav_albums"
+        android:orderInCategory="7"
+        android:title="Favorite albums" />
+    <item
+        android:id="@+id/fav_playlists"
+        android:orderInCategory="8"
+        android:title="Favorite playlists" />
+    <item
+        android:id="@+id/change_password"
+        android:orderInCategory="9"
+        android:title="Change password" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="10"
+        android:title="Log out" />
+</menu>

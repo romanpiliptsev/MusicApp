@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:paddingBottom="7dp">
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_yellow_star"
+        android:onClick="deleteSong"/>
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/artist"
+        app:layout_constraintLeft_toRightOf="@id/star"
+        app:layout_constraintRight_toLeftOf="@id/gl1.5"
+        tools:text="MOON"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <!--<androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.24"/>-->
+
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/song_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/star"
+        app:layout_constraintRight_toLeftOf="@id/gl1.5"
+        tools:text="Kanye West"
+        android:textColor="@color/white"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl1.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.48"/>
+
+    <TextView
+        android:id="@+id/album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/gl1.5"
+        app:layout_constraintRight_toLeftOf="@id/gl2"
+        tools:text="DONDA"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.77"/>
+    <!--        <View-->
+    <!--            android:layout_width="5px"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:background="@color/red"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintLeft_toLeftOf="@id/gl2"-->
+    <!--            app:layout_constraintTop_toBottomOf="@id/league_name" />-->
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/gl2"
+        app:layout_constraintRight_toLeftOf="@id/gl3"
+        tools:text="00:02:40"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.91" />
+
+    <ImageView
+        android:id="@+id/yt"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/gl3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/yt"
+        android:onClick="openYouTube"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
